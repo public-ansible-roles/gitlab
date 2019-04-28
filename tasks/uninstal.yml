@@ -1,0 +1,5 @@
+---
+- name: "docker-compose down"
+  docker_service:
+    project_src: "{{ dst_dir }}/{{ service_name }}"
+    state: absent
